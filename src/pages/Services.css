@@ -1,0 +1,59 @@
+/* Services.css */
+
+/* Container for the services section */
+.services-container {
+    padding: 50px 20px;
+    background-color: #f8f9fa; /* Light background for the section */
+    text-align: center;
+  }
+  
+  /* Title for the services section */
+  .services-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Grid container for services cards */
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+  }
+  
+  /* Individual service card */
+  .service-card {
+    background-color: #fff; /* White background for cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+  
+  .service-card img {
+    width: 100%; /* Make images responsive */
+    height: 200px;
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 15px 0;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  

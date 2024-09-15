@@ -1,0 +1,35 @@
+.hero-section {
+    background: url('/Users/sandykhot/Desktop/gym/gym-website/src/assets/gym.jpg') no-repeat center center/cover; /* Add your gym image here */
+    height: 100vh;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-overlay p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-overlay button {
+    font-size: 1.2rem;
+  }
+  
