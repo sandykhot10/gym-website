@@ -1,22 +1,27 @@
 import React from 'react';
-import './Services.css'; // Custom styles for services
+import './WeightLoss.css';
+import gymImage from '/Users/sandykhot/Desktop/gym/gym-website/src/assets/weightloss.jpg';
 
 const WeightLoss = () => {
   return (
-    <div className="container my-5">
-      <h2 className="text-center">Weight Loss Program</h2>
-      <div className="row">
-        <div className="col-md-6 mb-4">
-          <div className="card">
-            <img src="path/to/weight-loss-image.jpg" className="card-img-top" alt="Weight Loss" />
-            <div className="card-body">
-              <h5 className="card-title">Personalized Diet Plans</h5>
-              <p className="card-text">Get a diet plan tailored to your needs for effective weight loss.</p>
-              <button className="btn btn-primary">Learn More</button>
-            </div>
-          </div>
-        </div>
-        {/* Add more cards here if needed */}
+    <div className="weight-loss-container">
+      <div className="weight-loss-card">
+        <h2 className="weight-loss-title">Weight Loss</h2>
+        <img
+          src={gymImage}
+          alt="Healthy Lifestyle"
+          className="weight-loss-image"
+        />
+        <p className="weight-loss-description">
+          Discover effective tips and plans to help you on your weight loss journey. Maintain a balanced diet and a healthy lifestyle.
+        </p>
+        <ul className="weight-loss-tips">
+          <li>🍏 Eat balanced meals with plenty of vegetables.</li>
+          <li>🚶‍♂️ Incorporate regular physical activity.</li>
+          <li>💧 Stay hydrated throughout the day.</li>
+          <li>🥦 Focus on whole foods over processed foods.</li>
+        </ul>
+        <button className="learn-more-btn">Learn More</button>
       </div>
     </div>
   );

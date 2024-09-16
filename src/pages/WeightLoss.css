@@ -1,0 +1,96 @@
+/* WeightLoss.css */
+
+/* Main container */
+  .weight-loss-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    background: url('/Users/sandykhot/Desktop/gym/gym-website/src/assets/gym6.jpg') no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a dark overlay */
+    background-blend-mode: overlay; /* Blends the background color with the image */
+    color: #fff; /* Change text color to white for better contrast */
+    border-radius: 8px;
+  } 
+  /* Card for weight loss content */
+  .weight-loss-card {
+    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    text-align: center;
+    z-index: 2; /* Ensures the card appears above the overlay */
+    position: relative;
+    animation: slideIn 1s ease-in-out; /* Card slide-in animation */
+  }
+  
+  /* Slide-in animation */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Title */
+  .weight-loss-title {
+    font-size: 2.8rem;
+    color: #ff6666; /* Vibrant color for the title */
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds depth to the text */
+  }
+  
+  /* Description */
+  .weight-loss-description {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  /* Tips list */
+  .weight-loss-tips {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .weight-loss-tips li {
+    margin: 0.75rem 0;
+  }
+  
+  /* Image */
+  .weight-loss-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds depth to the image */
+  }
+  
+  /* Button */
+  .learn-more-btn {
+    background-color: #ff6666; /* Vibrant button color */
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 25px; /* Rounded button */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds depth to the button */
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #ff4444; /* Slightly darker on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+  }
+  

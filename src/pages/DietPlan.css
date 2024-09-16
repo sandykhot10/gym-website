@@ -67,10 +67,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.3s ease;
+    animation: slideIn 1s ease-in-out;
 }
-
 .meal-card:hover {
     transform: translateY(-8px);
+}
+/* Slide-in animation */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Meal title */
@@ -112,8 +124,59 @@
     margin-bottom: 0.5rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+/* Cover Photo */
+.cover-photo {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
 
-/* Responsive adjustments */
+/* DietPlan.css */
+
+/* Main container */
+.diet-plan-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a dark overlay */
+    background-blend-mode: overlay; /* Optional: blends the background color with the image */
+    color: #fff; /* Change text color to white for better contrast */
+}
+
+/* Title */
+.diet-plan-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff; /* White text for better contrast */
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Other CSS for form, cards, etc. */
+.diet-plan-form {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    color: #333; /* Change text color inside the form */
+}
+
+/* Individual meal card */
+.meal-card {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
 @media (max-width: 768px) {
     .diet-plan-title {
         font-size: 2rem;

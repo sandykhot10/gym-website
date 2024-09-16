@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './DietPlan.css';
+import coverPhoto from '/Users/sandykhot/Desktop/gym/gym-website/src/assets/gym3.jpg'; // Import the image
 
 const DietPlan = () => {
   const [gender, setGender] = useState('male');
@@ -45,7 +46,11 @@ const DietPlan = () => {
   const dietPlan = getDietPlan();
 
   return (
-    <div className="diet-plan-container">
+    <div
+      className="diet-plan-container"
+      style={{ backgroundImage: `url(${coverPhoto})` }} // Set background image
+    >
+
       <h1 className="diet-plan-title">Your Diet Plan</h1>
       <div className="diet-plan-form">
         <label>
