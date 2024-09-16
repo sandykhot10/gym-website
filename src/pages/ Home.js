@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="hero-section">
       <div className="hero-overlay">
-        <h1>Welcome to GymZone</h1>
+        <h1>Welcome to Fitness Club</h1>
         <p>Your Journey to Fitness Starts Here</p>
         <button className="btn btn-primary btn-lg">Join Now</button>
       </div>

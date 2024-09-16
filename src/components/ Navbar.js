@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.css'; // Create this CSS file for custom styles
 import logo from '/Users/sandykhot/Desktop/gym/gym-website/src/assets/fitness.png'; // Import the new logo 
 
-
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
