@@ -7,7 +7,7 @@ const Home = () => {
       <div className="hero-overlay">
         <h1>Welcome to Fitness Club</h1>
         <p>Your Journey to Fitness Starts Here</p>
-        <button className="btn btn-primary btn-lg">Join Now</button>
+        <a href="/register" className="btn btn-primary btn-lg">Join Now</a>
       </div>
     </div>
   );
