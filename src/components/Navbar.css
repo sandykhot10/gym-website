@@ -1,26 +1,21 @@
 /* Navbar.css */
-
 .navbar {
     background-color: #333; /* Dark background for the navbar */
   }
-  
   .navbar-brand {
     font-size: 1.8rem; /* Larger font size for the brand */
     font-weight: bold; /* Make the brand name bold */
     color: #fff; /* White color for the text */
   }
-  
   .navbar-brand img {
     height: 40px; /* Set logo height */
     margin-right: 10px; /* Spacing between logo and text */
   }
-  
   .navbar-nav .nav-link {
     color: #fff; /* White color for the navigation links */
     font-size: 1.1rem; /* Slightly larger font size for links */
     margin: 0 10px; /* Spacing between links */
   }
-  
   .navbar-nav .nav-link:hover {
     color: #ff6347; /* Change color on hover */
   }
@@ -28,11 +23,9 @@
   .navbar-toggler {
     border-color: #fff; /* White border color for the toggler */
   }
-  
   .navbar-toggler-icon {
     background-image: url('data:image/svg+xml;charset=utf8,...'); /* Default Bootstrap icon */
   }
-  
   @media (max-width: 767px) {
     .navbar-collapse {
       background-color: #333; /* Dark background for the collapsed menu */
