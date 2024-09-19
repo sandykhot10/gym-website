@@ -19,22 +19,43 @@ const Register = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
     // Validate form data
     if (formData.password !== formData.confirmPassword) {
       alert('Passwords do not match');
       return;
     }
-    // Process registration (e.g., API call)
-    console.log('Registration successful!', formData);
-    navigate('/login'); // Redirect to login after successful registration
+
+    // Send registration data to backend for admin approval
+    try {
+      const response = await fetch('http://localhost:5000/api/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        // Successfully sent registration request
+        alert('Your registration request has been submitted. You will receive an email once approved.');
+        navigate('/'); // Redirect to home page or a different page after submission
+      } else {
+        alert(data.message || 'Failed to submit registration request.');
+      }
+    } catch (error) {
+      alert('An error occurred while processing your registration.');
+    }
   };
 
   return (
     <div className="register-container">
       <form onSubmit={handleSubmit} className="register-form">
-      <h2 className="text-center mb-4">Register</h2>
+        <h2 className="text-center mb-4">Register</h2>
         <div className="form-group">
           <label htmlFor="username">Username</label>
           <input
